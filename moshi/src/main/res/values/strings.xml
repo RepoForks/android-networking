@@ -1,0 +1,30 @@
+<resources>
+	<string name = "app_name">Moshi</string>
+
+	<string name = "hello_world">Hello world!</string>
+	<string name = "action_settings">Settings</string>
+    <string name="lbl_jsonStringToParse">Json String to Parse </string>
+    <string name="parse">Parse with Moshi</string>
+    <string name = "parsedJson"/>
+    <string name = "parse_custom">Parse w Custom Adapter</string>
+
+
+    <!-- Note: in strings.xml " can be escaped via, \ but in layout, &quot;mytext&quot; is required-->
+	<string name = "jsonString">
+        {
+            \"hidden_card\":      {  \"rank\": \"6\",  \"suit\": \"SPADES\"  },
+
+            \"visible_cards\":[\n
+                                {  \"rank\": \"4\",  \"suit\": \"CLUBS\"   },\n
+                                {  \"rank\": \"A\",  \"suit\": \"HEARTS\"  }
+                            ]
+        }
+    </string>
+    	<string name = "jsonStringCustom">
+          {\"hidden_card\": \"7H\",\n
+
+            \"visible_cards\": [\n
+           \"5D\",\n
+          \"KS\" ] }
+    </string>
+</resources>

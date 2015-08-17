@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+                xmlns:tools = "http://schemas.android.com/tools"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"
+                android:paddingLeft = "@dimen/activity_horizontal_margin"
+                android:paddingRight = "@dimen/activity_horizontal_margin"
+                android:paddingTop = "@dimen/activity_vertical_margin"
+                android:paddingBottom = "@dimen/activity_vertical_margin"
+                tools:context = ".ActivityMain">
+
+	<TextView
+		android:text = "@string/jsonString"
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content" android:id = "@+id/txtV_jsonString"
+        android:layout_below = "@+id/txtV_lbl_jsonString" android:layout_alignParentStart = "true"
+        android:background = "#fdffd5"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/lbl_jsonStringToParse"
+        android:id = "@+id/txtV_lbl_jsonString"
+        android:layout_alignParentTop = "true" android:layout_alignParentStart = "true"
+        />
+
+    <Button
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/parse"
+        android:id = "@+id/btn_parse"
+        android:layout_below = "@+id/txtV_jsonString" android:layout_alignParentStart = "true"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/txtV_parsedJson"
+        android:text = "@string/parsedJson"
+        android:layout_below = "@+id/result" android:layout_alignParentStart = "true"
+        />
+
+    <Button
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/parse_custom"
+        android:id = "@+id/btn_parse_custom"
+        android:layout_below = "@+id/txtV_jsonStringCustom" android:layout_alignParentStart = "true"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "@string/jsonStringCustom"
+        android:id = "@+id/txtV_jsonStringCustom"
+        android:background = "#ffcded"
+        android:layout_below = "@+id/or" android:layout_alignParentStart = "true"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Or"
+        android:id = "@+id/or"
+        android:layout_below = "@+id/btn_parse" android:layout_alignParentStart = "true"
+        />
+
+    <TextView
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "Result..."
+        android:id = "@+id/result"
+        android:layout_below = "@+id/btn_parse_custom" android:layout_alignParentStart = "true"
+        />
+
+</RelativeLayout>
