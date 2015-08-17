@@ -4,7 +4,7 @@
 
 - [Google](https://github.com/google)
  - [Gson](https://github.com/google/gson) evaluating
- - [Flatbuffers](https://github.com/google/flatbuffers)
+ - [Flatbuffers](https://github.com/google/flatbuffers) evaluating
 
 - [Square](https://github.com/square)
  - [Moshi](https://github.com/square/moshi) - [Example](https://github.com/ersin-ertan/android-networking/tree/master/moshi/src/main/java/com/nullcognition/moshi)
