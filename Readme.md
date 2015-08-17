@@ -2,6 +2,9 @@
 - [BluelineLabs](https://github.com/bluelinelabs)
  - [LoganSquare](https://github.com/bluelinelabs/LoganSquare) evaluating
 
+- [Google](https://github.com/google)
+ - [Gson](https://github.com/google/gson) evaluating
+
 - [Square](https://github.com/square)
  - [Moshi](https://github.com/square/moshi) evaluating
 
