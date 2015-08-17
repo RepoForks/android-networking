@@ -27,4 +27,7 @@
            \"5D\",\n
           \"KS\" ] }
     </string>
+    <string name = "serialize">Create new Java Object and Serialize</string>
+    <string name = "or">----- OR -----</string>
+    <string name = "result">Result...</string>
 </resources>
