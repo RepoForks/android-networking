@@ -1,6 +1,6 @@
 ###Libraries
 - [BluelineLabs](https://github.com/bluelinelabs)
- - [LoganSquare](https://github.com/bluelinelabs/LoganSquare) evaluating
+ - [LoganSquare](https://github.com/bluelinelabs/LoganSquare)
 
 - [Google](https://github.com/google)
  - [Flatbuffers](https://github.com/google/flatbuffers) evaluating

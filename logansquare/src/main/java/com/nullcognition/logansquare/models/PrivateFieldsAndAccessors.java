@@ -6,14 +6,21 @@ import com.bluelinelabs.logansquare.annotation.JsonObject;
 
 import java.util.List;
 
-@JsonObject(fieldDetectionPolicy = JsonObject.FieldDetectionPolicy.NONPRIVATE_FIELDS_AND_ACCESSORS)
+@JsonObject(fieldDetectionPolicy = JsonObject.FieldDetectionPolicy.NONPRIVATE_FIELDS_AND_ACCESSORS,
+            serializeNullCollectionElements = true)
 public class PrivateFieldsAndAccessors{
 
-	public String detected;
-	List<PrivateFieldsAndAccessors> alsoDetected;
+	String detected = "detected_String";
+	public List<Obj> alsoDetected;
+
+
+	@JsonObject // remember the type converter
+	public static class Obj{ }
+
 
 	@JsonIgnore public int ingnoreAnnotation;
 	private            int ingored;
+
 
 	private int notIgnoredHasAccessors;
 
@@ -22,6 +29,5 @@ public class PrivateFieldsAndAccessors{
 	public void setNotIgnoredHasAccessors(final int notIgnoredHasAccessors){
 		this.notIgnoredHasAccessors = notIgnoredHasAccessors;
 	}
-
 
 }

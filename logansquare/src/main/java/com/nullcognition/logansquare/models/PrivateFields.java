@@ -4,10 +4,14 @@ package com.nullcognition.logansquare.models;
 import com.bluelinelabs.logansquare.annotation.JsonIgnore;
 import com.bluelinelabs.logansquare.annotation.JsonObject;
 
-@JsonObject(fieldDetectionPolicy = JsonObject.FieldDetectionPolicy.NONPRIVATE_FIELDS)
+@JsonObject(fieldDetectionPolicy = JsonObject.FieldDetectionPolicy.NONPRIVATE_FIELDS,
+            serializeNullObjects = true)
 public class PrivateFields{
 
-	public String detected;
+	// detected with out annotations but to serialize null value you must include ^^
+	public String detected = null;
+	// which will become serialized when converting from model to json
+	// may also do the same with serializeNullCollectionElements = true
 
 	@JsonIgnore public int notDetected;
 

@@ -10,8 +10,20 @@ import com.bluelinelabs.logansquare.annotation.OnPreJsonSerialize;
 @JsonObject
 public class AnnotationsOnly{
 
+	// brackets must be \" in side "" to not be considered a ", each newline with + requires
+	// encapsulating ""
+	public static final String jsonString =
+			"{" +
+					"\"url\":\"urlField\"," +
+					"\"_id\":\"3403\"," +
+					"\"privateData\": \"4\"" +
+					"}";
+
 	@JsonField public        String url;
-	@JsonField(name = "_id") int    imageId; // change parsed/processing name, package level scope works
+	@JsonField(name = "_id") int    imageId;
+	// change parsed/processing name, package level scope works
+
+	public int getId(){return imageId;}
 
 	public int notUsed;
 
