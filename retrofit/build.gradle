@@ -23,7 +23,16 @@ dependencies{
 	compile fileTree(dir: 'libs', include: ['*.jar'])
 	testCompile 'junit:junit:4.12'
 	compile 'com.android.support:appcompat-v7:23.0.1'
+	
 	compile 'com.squareup.retrofit:retrofit:2.0.0-beta1'
-	compile 'com.squareup.moshi:moshi:0.9.0' // for the json converter
-	compile 'com.squareup.okhttp:okhttp:2.5.0' // is okhttp needed?
+	compile 'com.squareup.retrofit:converter-moshi:2.0.0-beta1' // for DAO (data access object)
+	compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta1'
+
+	compile 'io.reactivex:rxandroid:1.0.1'
+// Because RxAndroid releases are few and far between, it is recommended you also
+// explicitly depend on RxJava's latest version for bug fixes and new features.
+	compile 'io.reactivex:rxjava:1.0.14'
+
+//	compile 'com.squareup.moshi:moshi:0.9.0' // for the json converter, not needed when you have the converter? find out
+//	compile 'com.squareup.okhttp:okhttp:2.5.0' // is okhttp needed? no it is auto depended upon within retrofit
 }
