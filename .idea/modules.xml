@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/logansquare/logansquare.iml" filepath="$PROJECT_DIR$/logansquare/logansquare.iml" />
       <module fileurl="file://$PROJECT_DIR$/moshi/moshi.iml" filepath="$PROJECT_DIR$/moshi/moshi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofit/retrofit.iml" filepath="$PROJECT_DIR$/retrofit/retrofit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wire/wire.iml" filepath="$PROJECT_DIR$/wire/wire.iml" />
     </modules>
   </component>
 </project>
