@@ -26,7 +26,7 @@ import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 // retrofit 2 - notes from:
 // http://inthecheesefactory.com/blog/retrofit-2.0/en
-// http://qiita.com/yongjhih/items/e0a4e3db04efcfa0ca2e
+// http://qiita.com/yongjhih/items/e0a4e3db04efcfa0ca2e // fork of retrofit
 // https://github.com/square/retrofit/tree/master/samples/src/main/java/com/example/retrofit
 // https://www.youtube.com/watch?v=KIAoQbAu3eA
 
