@@ -5,7 +5,7 @@ buildscript{
 		jcenter()
 	}
 	dependencies{
-		classpath 'com.android.tools.build:gradle:1.2.3'
+		classpath 'com.android.tools.build:gradle:2.2.2'
 		classpath 'com.neenbedankt.gradle.plugins:android-apt:1.7'
 	}
 }
@@ -14,4 +14,9 @@ allprojects{
 	repositories{
 		jcenter()
 	}
+}
+
+ext{
+
+	buildToolsV = '24.0.3'
 }
