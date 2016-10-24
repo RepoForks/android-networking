@@ -1,25 +1,26 @@
 apply plugin: 'com.android.application'
 
-android{
-	compileSdkVersion 22
-	buildToolsVersion "24.0.3"
+android {
+  compileSdkVersion 22
+  buildToolsVersion "24.0.3"
 
-	defaultConfig{
-		applicationId "com.nullcognition.wire"
-		minSdkVersion 21
-		targetSdkVersion 22
-		versionCode 1
-		versionName "1.0"
-	}
-	buildTypes{
-		release{
-			minifyEnabled false
-			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-		}
-	}
+  defaultConfig {
+    applicationId "com.nullcognition.wire"
+    minSdkVersion 21
+    targetSdkVersion 22
+    versionCode 1
+    versionName "1.0"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
 }
 
-dependencies{
-	compile fileTree(dir: 'libs', include: ['*.jar'])
-	compile 'com.squareup.wire:wire-runtime:1.8.0'
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+
+  compile 'com.squareup.wire:wire-runtime:2.2.0'
 }
