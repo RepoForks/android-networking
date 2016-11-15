@@ -1,1 +1,3 @@
-include ':app', ':moshi', ':logansquare', ':wire', ':retrofit', ':protobuf', ':grpc'
+include ':app', ':moshi', ':logansquare', ':wire', ':retrofit', ':protobuf', ':grpc',
+    ':automoshiretrofit',
+    ':restpractice'
